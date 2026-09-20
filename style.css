@@ -1,0 +1,31 @@
+/* Css Comment, Pea Green RGB = (133,168,51) */
+h1 {
+    color: rgb(133,168,51);
+    text-align:center;
+}
+
+h4 {
+    color: rgb(133,168,51);
+    text-align:center;
+}
+
+p {
+    color: white;
+    text-align:center;
+}
+
+
+body {
+    background-color: rgb(24,21,24);
+    font-family: Arial, sans-serif;
+    margin-right: 20px;
+}
+
+a {
+    color: gray;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
