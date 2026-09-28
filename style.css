@@ -2,6 +2,7 @@
 h1 {
     color: rgb(133,168,51);
     text-align:center;
+    text-shadow: 0 0 10px rgb(133,168,51);
 }
 
 h4 {
@@ -17,6 +18,12 @@ p {
 
 body {
     background-color: rgb(24,21,24);
+    background-image: url("images/Background-three.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
     font-family: Arial, sans-serif;
     margin-right: 20px;
 }
@@ -53,4 +60,14 @@ a:visited {
 /*ID used by the h4 tag on the What Is The Alien? page*/
 *alien-heading {
     text-decoration: underline;
+}
+
+/*Class used by img tags for Alien pictures*/
+.alien-image {
+    display: block;
+    width: 400px;
+    max-width: 100%,
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
 }
