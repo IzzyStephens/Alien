@@ -30,14 +30,27 @@ a:hover {
     text-decoration: underline;
 }
 
-/*This is for unvisited links*/
-
-a:link {
-    color: gray;
+/*visited Link*/
+a:visited {
+    color: rgb(133,168,51);
 }
 
-/*This is for visited links*/
+/*Class used by div tags to center navigation links*/
+.nav-links {
+    text-align: center;
+}
 
-a:visited {
-    color: lightslategray;
+/*Class used by p tags for special text*/
+.special-text {
+    font-style: italic;
+}
+
+/*ID used by the h1 tag on my homepage*/
+#home-title {
+    letter-spacing: 3px;
+}
+
+/*ID used by the h4 tag on the What Is The Alien? page*/
+*alien-heading {
+    text-decoration: underline;
 }
