@@ -29,3 +29,15 @@ a:hover {
     color: red;
     text-decoration: underline;
 }
+
+/*This is for unvisited links*/
+
+a:link {
+    color: gray;
+}
+
+/*This is for visited links*/
+
+a:visited {
+    color: lightslategray;
+}
