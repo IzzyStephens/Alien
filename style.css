@@ -58,7 +58,7 @@ a:visited {
 }
 
 /*ID used by the h4 tag on the What Is The Alien? page*/
-*alien-heading {
+#alien-heading {
     text-decoration: underline;
 }
 
