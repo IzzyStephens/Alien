@@ -65,12 +65,42 @@ a:visited {
 /*Class used by img tags for Alien pictures*/
 .alien-image {
     display: block;
-    width: 40%;
-    max-width: 100%;
+    width: 60%;
+    max-width: 600px;
     height: auto;
-    margin: 20px auto;
+    margin: 12px auto;
     border-radius: 8px;
 }
+
+.HR-Giger-image {
+    display: block;
+    width: 22%;
+    max-width: 440px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+.alien-image-home {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    justify-self: end;
+}
+
+.alien-image-home-two {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    justify-self: start;
+}
+    
 
 /* Class used by div tags to create a Nostromo-style terminal box */
 .terminal {
@@ -80,6 +110,24 @@ a:visited {
     margin: 20px;
     text-align: left;
     width: 350px;
+
+    box-sizing: border-box;
+}
+
+.link-terminal {
+    background-color: rgb(24,21,24);
+    border: 1px solid rgb(133, 168, 51);
+    padding: 12px 25px;
+
+    width: fit-content;
+    margin: 25px auto;
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+link-terminal p {
+    margin: 0 0 8px 0;
 }
 
 .terminal-title {
@@ -97,6 +145,59 @@ a:visited {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+.home-layout {
+    display: grid;
+    grid-template-columns: 700px 350px 700px;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 95%;
+    margin: 30px auto;
+}
+
+.home-layout img {
+    width: 700px;
+    height: auto;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.giger-layout {
+    display: grid;
+    grid-template-columns: 350px 440px 350px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 140px auto 30px;
+}
+
+.giger-layout .terminal {
+    width: 100%;
+    max-width: 350px;
+    margin:0;
+}
+
+.giger-layout .HR-Giger-image {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.alien-info-terminal {
+    background-color: rgb(24,21,24);
+    border: 4px solid rgb(133, 168, 51);
+    padding: 20px;
+
+    width: 70%;
+    max-width: 900px;
+    margin: 20px auto;
+
+    box-sizing: border-box;
+    text-align: center; 
 }
 
 nav a {
@@ -156,10 +257,36 @@ nav a:hover {
 .system-footer {
     color: rgb(133, 168, 51);
     font-family: "Courier New", monospace;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 2px;
     text-align: center;
     margin-top: 15px;
+}
+
+body {
+    position: relative;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 15%;
+    height: 65%;
+    width: 7px;
+
+    border-left: 2px solid rgb(133, 168, 51);
+    border-right: 2px solid rgb(133, 168, 51);
+    
+    opacity: 0.35;
+}
+
+body::before {
+    left: 5%;
+}
+
+body::after {
+    right: 5%;
 }
 
 /* Tablet */
