@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weyland-Yutani Communications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <main class="communication-terminal">
+
+        <h1>WEYLAND-YUTANI CORPORATION</h1>
+
+        <h2>COMMUNICATIONS DIVISION</h2>
+
+        <p>SYSTEM STATUS: ONLINE</p>
+
+        <p>All Personnel Must Complete The Following Identification And Communication Form.</p>
+
+        <form id="crew-form">
+
+            <label for="crew-name">CREW_IDENTIFICATION:</label>
+
+            <input type="text" id="crew-name" name="crew-name" required>
+
+            <label for="crew-email">COMMUNICATION_ADDRESS:</label>
+
+            <input type="email" id="crew-email" name="crew-email" required>
+
+            <label for="favorite-movie">FAVORITE_ALIEN_FILM:</label>
+
+            <select id="favorite-movie" name="favorite-movie" required>
+
+                <option value="">SELECT_FILM</option>
+                <option value="alien">Alien (1979)</option>
+                <option value="aliens">Aliens (1986)</option>
+                <option value="alien 3">Alien 3 (1992)</option>
+                <option value="resurrection">Alien: Resurrection (1997)</option>
+                <option value="prometheus">Prometheus (2012)</option>
+                <option vlaue="covenant">Alien: Covenant (2017)</option>
+                <option value="romulus">Alien: Romulus (2024)</option>
+
+            </select>
+
+            <label for="viewing-date">WHEN DID YOU FIRST WATCH AN ALIEN MOVIE?:</label>
+
+            <input type="date" id="viewing-date" name="viewing-date" required>
+
+            <label for="crew-message">TRANSMISSION_MESSAGE:</label>
+
+            <textarea id="crew-message" name="crew-message" rows="5" required></textarea>
+
+            <button type="submit">TRANSMIT_DATA</button>
+
+            <p id="transmission-response" aria-live="polite"></p>
+
+            </form>
+
+<div class="terminal-clock">
+    <p>CURRENT_DATE: <span id="ship-date"></span></p>
+    <p>CURRENT_TIME: <span id="ship-time"></span></p>
+
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

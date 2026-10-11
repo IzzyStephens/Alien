@@ -289,6 +289,188 @@ body::after {
     right: 5%;
 }
 
+/*Communication Terminal On Home Page*/
+
+.terminal-access {
+    width: 70%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+
+    background-color: rgb(24,21,24);
+    border: 2px solid rgb(133, 168, 51);
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.terminal-access h2 {
+    color: rgb(133, 168, 51);
+    font-size: 19px;
+    text-decoration: underline;
+    font-family: "Courier New", monospace;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.terminal-access p {
+    color: rgb(133, 168, 51);
+    font-size: 14px;
+    font-family: "Courier New", monospace;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.terminal-button {
+    display: inline-block;
+
+    padding: 10px 20px;
+    margin-top: 3px;
+
+    background-color: rgb(24, 21, 24);
+    color: rgb(133, 168, 51);
+
+    border: 2px solid rgb(133, 168, 51);
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.terminal-button:hover {
+    background-color: rgb(24, 21, 24);
+    color: rgb(133, 168, 51);
+
+    box-shadow: 0 0 10px rgb(133, 168, 51),
+                0 0 20px rgb(133, 168, 51),
+                0 0 30px rgb(133, 168, 51);
+
+    cursor: pointer;
+}
+
+/*Communication Page Layout*/
+
+.communication-terminal {
+    width: 80%;
+    max-width: 800px;
+
+    margin: 60px auto;
+    padding: 35px;
+
+    background-color: rgb(24, 21, 24);
+    border: 2px solid rgb(133, 168, 51); 
+    
+    color: rgb(133, 168, 51);
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+#crew-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 26px;
+
+    margin-top: 40px;
+    text-align: left;
+}
+
+/*Form Styling*/
+
+#crew-form input,
+#crew-form select,
+#crew-form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: rgb(24, 21, 24);
+    color: rgb(133, 168, 51);
+
+    border: 1px solid rgb(133, 168, 51);
+
+    font-family: inherit;
+    font-size: 14px;
+
+    box-sizing: border-box;
+}
+
+#crew-form input:focus,
+#crew-form select:focus,
+#crew-form textarea:focus {
+    outline: none;
+
+    box-shadow: 0 0 8px rgb(133, 168, 51);
+}
+
+/*Submit Button*/
+
+#crew-form button {
+    padding: 15px;
+
+    background-color: rgb(24, 21, 24);
+    color: rgb(133, 168, 51);
+
+    border: 2px solid rgb(133, 168, 51);
+
+    font-family: inherit;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#crew-form button:hover {
+    background-color: rgb(133, 168, 51);
+    color: rgb(24, 21, 24);
+
+    box-shadow: 0 0 10px rgb(133, 168, 51),
+                0 0 20px rgb(133, 168, 51),
+                0 0 30px rgb(133, 168, 51);
+}
+
+/*Communication Clock*/
+
+.terminal-clock {
+    margin-top: 35px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgb(133, 168, 51);
+
+    text-align: center;
+    color: rgb(133, 168, 51);
+
+    font-size: 14px;
+}
+
+.terminal-clock p {
+    margin: 10px 0;
+}
+
+/*Communication Terminal Response*/
+
+#transmission-response {
+    color: rgb(133, 168, 51);
+
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 1.8;
+
+    margin: 10px 0;
+}
+
+#transmission-response:not(:empty) {
+    padding: 20px;
+
+    border: 1px solid rgb(133, 168, 51);
+
+    background-color: rgb(24, 21, 24);
+
+    box-shadow: 0 0 10px rgba(212, 230, 90, 0.3);
+}
 /* Tablet */
 @media screen and (max-width: 768px) {
     .terminal-row {
