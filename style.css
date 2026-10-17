@@ -200,6 +200,93 @@ link-terminal p {
     text-align: center; 
 }
 
+.movie-terminal {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.movie-intro {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 900px;
+    margin: 30px auto;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+
+.movie-layout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr) 200px;
+    gap: 25px;
+    max-width: 1400px;
+    margin: 20px auto;
+    align-items: start;
+}
+
+.movie-side-images {
+    display: contents;
+}
+
+.movie-side-left {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    left: -100px;
+}
+
+.movie-side-right {
+    grid-column: 3;
+    grid-row: 1;
+    position: relative;
+    right: -30px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.movie-side-left img,
+.movie-side-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.movie-side-right img {
+    width: 65%
+}
+
+.movie-archives {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+}
+
+.movie-image-caption {
+    font-family: "Courier New", monospace;
+    font-size: 12.5px;
+    color: rgb(133, 168, 51);
+    text-align: center;
+    line-height: 1.5;
+
+    border-top: 1 px solid rgb(133, 168, 51);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.movie-side-right .movie-image-caption {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
 nav a {
     display: inline-block;
     padding: 8px 14px;
