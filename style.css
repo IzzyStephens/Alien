@@ -676,3 +676,30 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+/*Extra adjustments for mobile screens*/
+
+@media screen and (max-width: 600px) {
+
+    .home-layout,
+    .giger-layout,
+    .movie-layout {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .terminal,
+    .home-terminal,
+    .movie-terminal,
+    .alien-info-terminal {
+        width: 90%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .movie-side-images {
+        width: 90%;
+        max-width: 100%;
+    }
+}
