@@ -24,6 +24,6 @@ crewForm.addEventListener("submit", function(event) {
         response.textContent =
         "TRANSMISSION ACCEPTED. THANK YOU, " + crewName.toUpperCase() +
         ". WEYLAND-YUTANI HAS RECIVED YOUR MESSAGE." +
-        "THANK YOU FOR YOUR COOPERATION.";
+        " THANK YOU FOR YOUR COOPERATION.";
     }
 });
